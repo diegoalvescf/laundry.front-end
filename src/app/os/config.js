@@ -17,6 +17,14 @@ export const osConfig = $stateProvider => {
         .state("app.os.new",{
             template: require("@views/os/form.html"),
             url: "/new",
-            controller: formController
+            controller: FormController
         })
-}
+        .state("app.os.edit",{
+            template: require("@views/os/form.html"),
+            url: "/{id}",
+            controller: FormController,
+            controllerAs: "vm"
+        });
+};
+
+osConfig.$inject = ["$stateProvider"];
