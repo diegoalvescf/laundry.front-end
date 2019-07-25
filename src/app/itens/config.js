@@ -1,7 +1,7 @@
 import ListController from "./list.controller"
 import FormController from "./form.controller"
 
-
+ 
 export const itemConfig = $stateProvider => {
     $stateProvider
 

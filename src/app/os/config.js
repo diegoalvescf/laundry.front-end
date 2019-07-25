@@ -5,7 +5,7 @@ export const osConfig = $stateProvider => {
     $stateProvider
         .state("app.os",{
             template: require("@views/default.html"),
-            url: "clientes",
+            url: "os",
             redirectTo: "app.os.list"
         })
         .state("app.os.list",{
