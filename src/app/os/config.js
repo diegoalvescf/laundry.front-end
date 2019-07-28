@@ -17,7 +17,8 @@ export const osConfig = $stateProvider => {
         .state("app.os.new",{
             template: require("@views/os/form.html"),
             url: "/new",
-            controller: FormController
+            controller: FormController,
+            controllerAs: "vm"
         })
         .state("app.os.edit",{
             template: require("@views/os/form.html"),

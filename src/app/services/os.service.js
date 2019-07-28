@@ -1,7 +1,7 @@
 export default class OSService{
     constructor($http) {
         this.http = $http; //faz a ponte entre controller e o html
-        this.url = "http://localhost:3000/os;"//Endereço do backend - Quando for publicar tem que alterar essa URL para subir o projeto 
+        this.url = "https://lavanderias.herokuapp.com/os"//Endereço do backend - Quando for publicar tem que alterar essa URL para subir o projeto 
     }
 
     findByPesquisa(pesquisa){
