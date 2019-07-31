@@ -40,7 +40,7 @@ export default class FormController {
       this.record.itens = [];
       this.record.cliente.id = this.cliente._id;
       this.record.cliente.nome = this.cliente.nome;
-      this.record.itens = this.itensAdicionados;
+      this.record._itens = this.itensAdicionados;
       if (this._id) {
         await this._osService.update(this.record);
       } else {
