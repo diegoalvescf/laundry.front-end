@@ -38,8 +38,8 @@ export default class FormController {
     async save() {
       this.record.cliente = {};
       this.record.itens = [];
-      this.record.cliente._id = this.cliente.id;
-      this.record.cliente._nome = this.cliente.nome;
+      this.record.cliente.id = this.cliente._id;
+      this.record.cliente.nome = this.cliente.nome;
       this.record.itens = this.itensAdicionados;
       if (this._id) {
         await this._osService.update(this.record);
